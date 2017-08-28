@@ -596,7 +596,8 @@
             doneButton.tintColor = [UIColor whiteColor];
         if (self.doneButtonTitleColor != nil)
             doneButton.tintColor = self.doneButtonTitleColor;
-        
+        if (self.doneButtonBackgroundColor != nil)
+            doneButton.backgroundColor = self.doneButtonBackgroundColor;
         if (!_hideAllButtons && !_hideDoneButton)
             [alertView addSubview:doneButton];
         
@@ -640,6 +641,8 @@
             doneButton.tintColor = [UIColor whiteColor];
         if (self.doneButtonTitleColor != nil)
             doneButton.tintColor = self.doneButtonTitleColor;
+        if (self.doneButtonBackgroundColor != nil)
+            doneButton.backgroundColor = self.doneButtonBackgroundColor;
         
         UIButton *otherButton = [UIButton buttonWithType:UIButtonTypeSystem];
         otherButton.backgroundColor = [UIColor whiteColor];
@@ -856,6 +859,8 @@
             doneButton.tintColor = [UIColor whiteColor];
         if (self.doneButtonTitleColor != nil)
             doneButton.tintColor = self.doneButtonTitleColor;
+        if (self.doneButtonBackgroundColor != nil)
+            doneButton.backgroundColor = self.doneButtonBackgroundColor;
         
         if (!_hideAllButtons) {
             [alertView addSubview:firstButton];
